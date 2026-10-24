@@ -1,0 +1,14 @@
+﻿# publish only what the live page uses
+*
+!.gitignore
+!CNAME
+!index.html
+!assets/
+assets/*
+!assets/badge-mono.webp
+!assets/badge-ring.webp
+!assets/cta.webp
+!assets/hero-wide.webp
+!assets/mark-dark.png
+!assets/mark-sage.png
+!assets/sobre.webp
