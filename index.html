@@ -128,14 +128,14 @@ header.scrolled{background:rgba(239,237,228,.82);backdrop-filter:blur(14px);-web
 @media(max-width:860px){.links,.nav>.btn{display:none}.burger{display:block}}
 
 /* hero */
-.hero{position:relative;min-height:100vh;min-height:100svh;color:var(--cream);overflow:hidden;isolation:isolate;background:var(--ink)}
+.hero{position:relative;min-height:100vh;min-height:100dvh;color:var(--cream);overflow:hidden;isolation:isolate;background:var(--ink)}
 .hero-bg{position:absolute;inset:0;z-index:-2}
 .plx{position:absolute;inset:-8% 0}
 .plx img{width:100%;height:100%;object-fit:cover}
 .hero-bg .plx{inset:-6% 0}
 .hero-bg img{object-position:56% 22%}
 .hero-shade{position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(34,43,20,.94) 0%,rgba(34,43,20,.68) 34%,rgba(34,43,20,.12) 62%,rgba(34,43,20,.38) 100%)}
-.hero-in{position:relative;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;gap:clamp(22px,3.4vh,38px);padding-top:120px;padding-bottom:clamp(28px,5vh,56px)}
+.hero-in{position:relative;min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;justify-content:flex-end;gap:clamp(22px,3.4vh,38px);padding-top:120px;padding-bottom:clamp(28px,5vh,56px)}
 .hero h1{font-size:clamp(56px,8.6vw,160px);line-height:.92;font-weight:300;letter-spacing:-.035em;color:var(--cream)}
 .hero h1 .ln{display:block}
 .hero h1 .ln:nth-child(2){padding-left:.9em}
@@ -213,7 +213,7 @@ header .brand img{transition:filter .5s ease .45s}
 .quals li:last-child{border-bottom:1px solid var(--b)}
 .quals b{font-weight:500;color:var(--c)}.quals span{color:var(--m);text-align:right}
 @media(max-width:860px){.about-pin{grid-template-columns:1fr}.about-media{margin:0 auto}}
-html.fx .about-pin{display:block;position:relative;height:100vh;height:100svh;max-width:none;padding:0}
+html.fx .about-pin{display:block;position:relative;height:100vh;height:100dvh;max-width:none;padding:0}
 .about-copy h2 .al{display:block;width:fit-content;white-space:nowrap}
 html.fx .about-media{position:absolute;inset:0;max-width:none;aspect-ratio:auto;border-radius:0;clip-path:inset(15% 36% 11% 36% round 3px);background:var(--cream)}
 .about-frame,.about-cue{display:none}
@@ -263,7 +263,7 @@ html.fx .about-mission{position:absolute;left:max(var(--gut),calc((100% - var(--
 .alink:hover svg{transform:translateX(4px)}
 .ac-mark{position:absolute;right:-3%;bottom:-14%;z-index:-1;width:clamp(200px,24vw,360px);height:auto;opacity:.08;pointer-events:none}
 @media(max-width:860px){
-  .acard{--top:92px;--step:12px;min-height:min(44svh,360px);border-radius:24px}
+  .acard{--top:92px;--step:12px;min-height:min(44dvh,360px);border-radius:24px}
   .ac-in{padding:28px 24px}
   .acard h3{font-size:clamp(36px,10vw,48px)}
   .acard p{margin:12px 0 28px;max-width:none}
@@ -289,7 +289,7 @@ html.fx .about-mission{position:absolute;left:max(var(--gut),calc((100% - var(--
 @media(max-width:860px){.msteps{grid-template-columns:1fr}}
 /* desktop pins and slides sideways; mobile keeps the plain vertical flow (no pinned empty screen) */
 @media(min-width:861px){
-  html.fx .method-pin{height:100vh;height:100svh;padding:0}
+  html.fx .method-pin{height:100vh;height:100dvh;padding:0}
   html.fx .mtrack{display:flex;align-items:center;width:max-content;height:100%;padding-right:20vw}
   html.fx .mlead{width:100vw;padding:40px var(--gut) 0}
   /* the line sits centred on the first screen, in two balanced lines, a step below the hero title in size */
@@ -304,12 +304,12 @@ html.fx .about-mission{position:absolute;left:max(var(--gut),calc((100% - var(--
   .mstep h3{font-size:clamp(38px,11vw,56px)}
   .mtype{font-size:19px}
   /* with motion the whole section is one pinned screen: sizes follow the screen height so the line and all four steps fit */
-  html.fx .method-pin{display:flex;flex-direction:column;justify-content:center;height:100vh;height:100svh;padding:calc(84px + 2svh) var(--gut) 3svh}
-  html.fx .mlead h2{font-size:min(12.5vw,6.2svh);line-height:.98}
-  html.fx .msteps{gap:2.8svh;margin-top:4.2svh}
-  html.fx .mstep h3{font-size:min(9vw,4.6svh)}
+  html.fx .method-pin{display:flex;flex-direction:column;justify-content:center;height:100vh;height:100dvh;padding:calc(84px + 2dvh) var(--gut) 3dvh}
+  html.fx .mlead h2{font-size:min(12.5vw,6.2dvh);line-height:.98}
+  html.fx .msteps{gap:2.8dvh;margin-top:4.2dvh}
+  html.fx .mstep h3{font-size:min(9vw,4.6dvh)}
   .mn{font-size:.5em;vertical-align:.9em}
-  html.fx .mtype{margin-top:.9svh;font-size:min(4.3vw,2.15svh);line-height:1.45;max-width:none}
+  html.fx .mtype{margin-top:.9dvh;font-size:min(4.3vw,2.15dvh);line-height:1.45;max-width:none}
 }
 
 /* faq */
@@ -699,7 +699,7 @@ html.fx .about-mission{position:absolute;left:max(var(--gut),calc((100% - var(--
     /* opening frame: the photo is a centred 4:5 print with a sage frame line, the heading split around it */
     var pin=$('.about-pin'), lines=$$('.about-copy h2 .al'), FR=10, LG=FR+14;
     function arch(){
-      var W=pin.offsetWidth, H=innerHeight, hb=h.offsetHeight, w, ph, t;
+      var W=pin.offsetWidth, H=pin.offsetHeight||innerHeight, hb=h.offsetHeight, w, ph, t;
       // mobile: heading line + print + heading line, centred in the space below the header
       if(mob){ var lh=lines[0].offsetHeight; w=Math.min(W*.64,H*.4*.8); ph=w*1.25; t=hb+(H-hb-ph-(lh+LG)*2)/2+lh+LG; }
       else { w=Math.min(H*.68*.8,W*.34); ph=w*1.25; t=(H-ph)/2+H*.03; }
@@ -736,7 +736,7 @@ html.fx .about-mission{position:absolute;left:max(var(--gut),calc((100% - var(--
       .fromTo(cue,{y:cueY,opacity:1},{y:function(){return cueY()-14},opacity:0,duration:.3,ease:'power1.in'},0)
       .fromTo('.about-media',{clipPath:archClip},{clipPath:'inset(0px 0px 0px 0px round 0px 0px 0px 0px)',duration:1.3,ease:'power2.inOut'},0)
       .fromTo('.about-frame',{left:frameBox('left'),top:frameBox('top'),width:frameBox('width'),height:frameBox('height'),opacity:1},
-        {left:-FR,top:-FR,width:function(){return pin.offsetWidth+FR*2},height:function(){return innerHeight+FR*2},duration:1.3,ease:'power2.inOut'},0)
+        {left:-FR,top:-FR,width:function(){return pin.offsetWidth+FR*2},height:function(){return pin.offsetHeight+FR*2},duration:1.3,ease:'power2.inOut'},0)
       .to('.about-frame',{opacity:0,duration:.45},.15)
       .fromTo('.about-media img',{scale:mob?.7:.94,xPercent:mob?0:-3,yPercent:mob?17:15,transformOrigin:'50% 30%'},{scale:1,xPercent:0,yPercent:0,duration:1.3,ease:'power2.inOut'},0)
       .fromTo(lines[0],{x:besideArch(0,'x'),y:besideArch(0,'y')},{x:0,y:0,duration:1.15,ease:'power2.inOut'},0)
