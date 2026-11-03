@@ -3,6 +3,7 @@
 !.gitignore
 !CNAME
 !index.html
+!404.html
 !assets/
 assets/*
 !assets/badge-mono.webp
